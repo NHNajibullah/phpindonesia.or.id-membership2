@@ -36,8 +36,8 @@ $this->append_js(array(
 						?>
 
 						<li style="margin-right: 5px; padding: 3px; border: 1px #DDDDDD solid;">
-							<span class="fa <?php echo $socmedias_logo[$socmed_item['socmed_type']]; ?>"></span>
-							<?php echo filter_var(trim($socmed_item['account_name']), FILTER_SANITIZE_STRING); ?>
+							<a href="<?php echo $socmend_item['account_url'];?>" title="<?php echo filter_var(trim($socmed_item['account_name']), FILTER_SANITIZE_STRING); ?>" target="_blank" rel="nofollow"></a><span class="fa <?php echo $socmedias_logo[$socmed_item['socmed_type']]; ?>"></span>
+							<?php echo filter_var(trim($socmed_item['account_name']), FILTER_SANITIZE_STRING); ?></a>
 						</li>
 
 						<?php
